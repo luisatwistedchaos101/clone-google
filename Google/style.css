@@ -1,82 +1,95 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: white;
-    color: #202124;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .barraDeNavegacao {
-  justify-content: space-between;
-  padding: 10px 20px
-  }
-  
-  .nav-link {
-    margin-right: 20px;
-    text-decoration: none;
-    color: #5f6368;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  .botaoIcone img,
-  .fotoPerfil img {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .container {
-    margin-top: 100px;
-    text-align: center;
-  }
-  
-  .logo {
-    width: 250px;
-    margin-bottom: 20px;
-  }
-  
-  .search-form {
-    width: 100%;
-    max-width: 600px;
-  }
-  
-  .search-bar {
-    display: flex;
-    align-items: center;
-    background-color: #f1f3f4;
-    border: 1px solid #dfe1e5;
-    border-radius: 100px;
-    padding: 10px 15px;
-    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
-    position: relative;
-  }
-  
-  .search-bar img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
-  
-  .search-input {
-    flex: 1;
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 16px;
-  }
-  
-  .search-bar button {
-    border: none;
-    background: transparent
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  color: #202124;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.barraDeNavegacao {
+  display: flex; 
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.simbolos {
+  display: flex;
+  gap: 20px; 
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #5f6368;
+}
+
+.botaoIcone, .fotoPerfil {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.fotoPerfil img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.container {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.logo {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f1f3f4;
+  border: 1px solid #dfe1e5;
+  border-radius: 100px;
+  padding: 10px 15px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  position: relative;
+}
+
+.search-bar img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+.search-bar button {
+  border: none;
+  background: transparent;
+}
 
 .botaoIcone {
   background-color: transparent;
@@ -105,28 +118,65 @@
   background-color: #5f6368; 
   border-radius: 2px; 
 }
- 
-.footer{
-width: 100%;
-background-color: #f8f9fa;
-padding: 10px 0;
-bottom: 0;
-text-align: center;
+
+.footer {
+  position: absolute; 
+  bottom: 0;
+  width: 100%; 
+  background-color: #202124; 
+  color: #5f6368; 
+  padding: 10px 20px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
 }
 
-.footer ul{
-  list-style: none;
+.footer .left {
+  text-align: left;
+}
+
+.footer .center {
+  display: flex; 
+  gap: 20px; 
+}
+
+.footer .right {
+  display: flex; 
+  gap: 15px; 
+}
+
+.footer a {
+  text-decoration: none; 
+  color: #8ab4f8; 
+  font-size: 14px;
+}
+
+.footer a:hover {
+  text-decoration: underline; 
+}
+
+.footer li a:hover {
+  text-decoration: underline; 
+}
+
+.buttons {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
+  margin-top: 20px; 
 }
 
-.footer li a{
-  text-decoration: none;
+.botaoPesquisa, .botaoSorte {
+  padding: 10px 20px;
   font-size: 14px;
-  color: #5f6368
+  background-color: #f8f9fa;
+  border: 1px solid #dfe1e5;
+  border-radius: 4px;
+  color: #3c4043;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.footer li a:hover{
-text-decoration: underline;
+.botaoPesquisa:hover, .botaoSorte:hover {
+  background-color: #f1f3f4;
 }

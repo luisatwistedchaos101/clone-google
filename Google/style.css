@@ -168,12 +168,12 @@ html, body {
 .footer .top {
   display: flex;
   justify-content: flex-start;
-  align-items: center; /* Centraliza verticalmente */
+  align-items: center; 
   padding: 5px 20px; 
   font-size: 14px;
   color: #666; 
   border-bottom: 1px solid #ccc;
-  text-align: left; /* Garante alinhamento à esquerda */
+  text-align: left;
 }
 
 

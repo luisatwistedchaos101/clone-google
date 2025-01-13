@@ -155,50 +155,40 @@ html, body {
 
 .footer {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   background-color: #f8f9fa;
   color: #000;
   width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .footer .top {
   display: flex;
-  justify-content: flex-start; 
+  justify-content: flex-start;
+  align-items: center; /* Centraliza verticalmente */
   padding: 5px 20px; 
   font-size: 14px;
   color: #666; 
   border-bottom: 1px solid #ccc;
+  text-align: left; /* Garante alinhamento à esquerda */
 }
+
 
 .footer .bottom {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 5px 15px;
+  align-items: center; 
+  padding: 10px 20px;
 }
-
-.footer .left {
-  flex: 0.3;
-  text-align: left;
-  padding-left: 10px; 
-}
-
-.footer .right {
-  flex: 0.3;
-  text-align: right;
-  padding-right: 20px;
-}
-
 
 .footer a {
-  text-decoration: none;
-  color: inherit;
   margin: 0 5px;
-  white-space: nowrap;
+  font-size: 12px;
+  text-decoration: none;
+  color: #202124;
 }
 
 .footer a:hover {
